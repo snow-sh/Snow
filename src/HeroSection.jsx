@@ -27,7 +27,7 @@ export default function HeroSection() {
         style={{ y, scale }}
         className="absolute text-[30vw] font-extrabold mb-70 text-white/5 select-none z-0 tracking-tight leading-none"
       >
-        RILEY
+        Snow
       </motion.h1>
 
       {/* Foreground Content - REWRITTEN FOR IMPACT */}
@@ -45,20 +45,14 @@ export default function HeroSection() {
           Websites That Turn Visitors Into Customers
         </div>
 
-        {/*
-          OLD: "I'm Riley An Indie Dev"
-          NEW: A bold, client-centric headline. It compliments them and states a clear value proposition.
-        */}
+      
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight text-balance">
           Your Business is Great.
           <br className="hidden sm:block" />
           Your Website Should Be, Too.
         </h2>
 
-        {/*
-          OLD: "Enhance your online presence with me"
-          NEW: Explains the solution. It addresses the core problems of local businesses (attracting customers) and portfolio clients (standing out).
-        */}
+   
         <p className="text-white/60 text-sm sm:text-base max-w-2xl">
           I build high-performance websites for local businesses and professionals that solve one crucial problem: building credibility and growing your customer base.
         </p>

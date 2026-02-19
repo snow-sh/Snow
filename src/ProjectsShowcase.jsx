@@ -85,23 +85,23 @@ const ProjectsShowcase = () => {
       title: "Portfolio website",
       description: "My Weird Portfolio created in react.",
       imageUrl: img4,
-      liveUrl: "https://rileywren.github.io/cx-7/",
-      codeUrl: "https://github.com/RileyWren/cx-7",
+      liveUrl: "https://snow-sh.github.io/cx-7/",
+      codeUrl: "https://github.com/snow-sh/cx-7",
     },
               {
       title: "Fast Food Website",
       description: "This website is created in Next JS",
       imageUrl: img7,
       liveUrl: "https://burgary-khaki.vercel.app/",
-      codeUrl: "https://github.com/RileyWren/fast_food_website",
+      codeUrl: "https://github.com/snow-sh/fast_food_website",
     },
  
     {
       title: "Restuarant Website",
       description: "A Restuarent website showcasing my skills and projects.",
       imageUrl: img2,
-      liveUrl: "https://rileywren.github.io/resturant-website/",
-      codeUrl: "https://github.com/RileyWren/resturant-website",
+      liveUrl: "https://snow-sh.github.io/resturant-website/",
+      codeUrl: "https://github.com/snow-sh/resturant-website",
     },
     {
       title: "Chat App",
@@ -115,15 +115,15 @@ const ProjectsShowcase = () => {
       title: "Steganography Tool",
       description: "Using this tool you can hide content in text files, images, and in videos.",
       imageUrl: img5,
-      liveUrl: "https://rileywren.github.io/steganography/",
-      codeUrl: "https://github.com/RileyWren/steganography",
+      liveUrl: "https://snow-sh.github.io/steganography/",
+      codeUrl: "https://github.com/snow-sh/steganography",
     },
        {
       title: "Gym Website",
       description: "A fully functional Gym website built with React.",
       imageUrl: img1,
-      liveUrl: 'https://rileywren.github.io/gym-website/',
-      codeUrl: "https://github.com/RileyWren/gym-website",
+      liveUrl: 'https://snow-sh.github.io/gym-website/',
+      codeUrl: "https://github.com/snow-sh/gym-website",
     },
   ];
 

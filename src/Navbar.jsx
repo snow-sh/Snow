@@ -23,7 +23,7 @@ export default function Navbar() {
 
       <div className="max-w-screen-lg mx-auto flex items-center justify-between">
         {/* Logo or Site name */}
-        <div className="text-white font-bold text-lg sm:hidden">Riley</div>
+        <div className="text-white font-bold text-lg sm:hidden">Snow</div>
 
         {/* Hamburger button */}
         <div className="sm:hidden">

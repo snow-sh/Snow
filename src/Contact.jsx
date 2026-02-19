@@ -25,7 +25,7 @@ export default function Contact() {
     const formData = new FormData(formRef.current);
 
     try {
-      const res = await fetch('https://formsubmit.co/zainab.42847@gmail.com', {
+      const res = await fetch('https://formsubmit.co/snoww.here@proton.me', {
         method: 'POST',
         body: formData,
       });
@@ -68,7 +68,7 @@ export default function Contact() {
           custom={2}
         >
           <a
-            href="https://github.com/RileyWren"
+            href="https://github.com/snow-sh"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-md transition-all duration-300 hover:scale-105"
