@@ -7,5 +7,9 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+<<<<<<< HEAD
   base: "/snow/"
+=======
+  base: "/Snow/"
+>>>>>>> d7f4959 (Updated)
 })
