@@ -25,14 +25,12 @@ const ProjectCard = ({ project }) => {
         transition-all duration-300
         w-[300px] sm:w-[400px] lg:w-[420px] xl:w-[450px] flex-shrink-0
       "
-      // This card already has a great whileInView animation, so we'll keep it!
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6 }}
       whileHover={{ scale: 1.03 }}
     >
-      {/* Blobs */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-orange-400 to-transparent opacity-10 rounded-full blur-3xl -translate-x-1/4 -translate-y-1/4 pointer-events-none group-hover:opacity-20 transition-opacity duration-300" />
       <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-bl from-violet-400 to-transparent opacity-10 rounded-full blur-3xl translate-x-1/4 -translate-y-1/4 pointer-events-none group-hover:opacity-20 transition-opacity duration-300" />
 
@@ -179,13 +177,12 @@ const ProjectsShowcase = () => {
     else if (action === 'dot' && index !== null) setCurrentIndex(index);
   };
 
-  // --- ANIMATION VARIANTS FOR SCROLL-TRIGGERED ANIMATION ---
   const sectionVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3, // Animates children one after the other
+        staggerChildren: 0.3, 
         duration: 0.5,
       },
     },
@@ -205,26 +202,23 @@ const ProjectsShowcase = () => {
 
   return (
     <section className="relative py-20 px-0 md:px-8 bg-black overflow-hidden">
-      {/* Background blobs are NOT animated, as requested */}
       <div className="absolute top-20 left-1/2 w-[80vw] h-[30vh] bg-gradient-to-tr from-orange-400 to-transparent opacity-20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/4 pointer-events-none" />
       <div className="absolute bottom-20 right-1/2 w-[80vw] h-[30vh] bg-gradient-to-bl from-violet-400 to-transparent opacity-20 rounded-full blur-3xl translate-x-1/2 -translate-y-1/4 pointer-events-none" />
 
-      {/* This motion.div is the container for all scroll animations */}
       <motion.div
         className="relative z-10 container mx-auto"
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }} // Trigger animation when 20% is visible
+        viewport={{ once: true, amount: 0.2 }} 
       >
         <motion.h2
           className="text-4xl md:text-5xl font-extrabold text-white text-center mb-16 px-4"
-          variants={itemVariants} // Animates with the parent
+          variants={itemVariants} 
         >
           My Latest Projects
         </motion.h2>
 
-        {/* The carousel and its buttons will animate in as one block */}
         <motion.div className="relative overflow-hidden py-4" variants={itemVariants}>
           <motion.div
             ref={carouselTrackRef}
@@ -241,7 +235,6 @@ const ProjectsShowcase = () => {
 
           {projects.length > 1 && (
             <>
-              {/* Note: I've preserved your button style changes from the last prompt */}
               <button
                 onClick={() => handleManualNavigation('previous')}
                 className="absolute left-2 sm:left-[-1rem] md:left-2 top-1/2 -translate-y-1/2 bg-white/30 p-2 rounded-full text-white shadow-lg hover:bg-violet-700 transition-all z-20 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-black"
@@ -260,7 +253,6 @@ const ProjectsShowcase = () => {
           )}
         </motion.div>
 
-        {/* The navigation dots will be the last item to animate in */}
         {projects.length > 1 && (
           <motion.div className="flex justify-center mt-8 space-x-3" variants={itemVariants}>
             {projects.map((_, index) => (

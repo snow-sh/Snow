@@ -14,7 +14,7 @@ const App = () => {
 
       <Navbar /> {/* Always on top */}
       <section id="home"><HeroSection /></section>
-      <section id="about"><AboutSection /></section>
+      {/* <section id="about"><AboutSection /></section> */}
       <section id="projects"><ProjectsShowcase /></section>
       <section id="contact"><Contact /></section>
 <Footer />

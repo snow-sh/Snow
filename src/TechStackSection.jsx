@@ -3,12 +3,11 @@ import { motion } from "framer-motion";
 
 export default function TechStackSection() {
   const techs = [
-    "React", "Next.js", "Node.js", "Express", "MongoDB", "Kubernetes"
+    "Unity 6", "Next.js", "Node.js", "Express", "MongoDB", "Linux", "IRC"
   ];
 
   return (
     <section className="relative w-full py-20 bg-black text-white px-4 md:px-8 overflow-hidden">
-      {/* Background Blur */}
       <div className="absolute bottom-0 right-0 w-[60vw] h-[40vh] bg-gradient-to-bl from-orange-400 to-transparent opacity-30 rounded-full blur-3xl translate-x-1/3 translate-y-1/3 pointer-events-none" />
 
       <motion.div

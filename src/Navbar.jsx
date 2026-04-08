@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react"; // uses lucide icons
+import { Menu, X } from "lucide-react"; 
 
 const tabs = ["Home", "About", "Projects", "Contact"];
 
@@ -11,28 +11,25 @@ export default function Navbar() {
 
   const handleClick = (tab) => {
     setActiveTab(tab);
-    setIsOpen(false); // close menu on click
+    setIsOpen(false); 
     const section = document.getElementById(tab.toLowerCase());
     section?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    // <div className="sticky top-0 sm:top-6 z-50 sm:flex sm:justify-center sm:items-center bg-transparent p-4">
  <div className="sticky top-0 sm:top-0 z-50 sm:flex sm:justify-center sm:items-center bg-gradient-to-r from-orange-400/[0.2] via-black to-violet-400/[0.2] p-6 border border-b-gray-500">
 
 
       <div className="max-w-screen-lg mx-auto flex items-center justify-between">
-        {/* Logo or Site name */}
+       
         <div className="text-white font-bold text-lg sm:hidden">Snow</div>
 
-        {/* Hamburger button */}
         <div className="sm:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-white">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Desktop Nav */}
         <div className="hidden sm:flex p-1 gap-1">
           {tabs.map((tab) => (
             <button
@@ -55,7 +52,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Nav */}
       <AnimatePresence>
         {isOpen && (
           // <motion.div
