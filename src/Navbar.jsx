@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react"; 
 
-const tabs = ["Home", "About", "Projects", "Contact"];
+const tabs = ["Home", "Projects", "Contact"];
 
 export default function Navbar() {
   const [activeTab, setActiveTab] = useState("Home");

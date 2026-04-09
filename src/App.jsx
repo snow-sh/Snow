@@ -1,24 +1,34 @@
-import HeroSection from './HeroSection'
-import Contact from './Contact'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import ProjectsShowcase from './ProjectsShowcase'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HeroSection from './HeroSection';
+import Contact from './Contact';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import ProjectsShowcase from './ProjectsShowcase';
+import GPG from './GPG'; 
+
+const Home = () => (
+  <>
+    <Navbar /> 
+    <section id="home"><HeroSection /></section>
+    <section id="projects"><ProjectsShowcase /></section>
+    <section id="contact"><Contact /></section>
+  </>
+);
 
 const App = () => {
   return (
-    <div className='overflow-x-hidden bg-black'>
-        {/* <div className="overflow-x-hidden absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-orange-400 to-transparent opacity-10 rounded-full blur-3xl -translate-x-1/4 -translate-y-1/4 pointer-events-none group-hover:opacity-20 transition-opacity duration-300" />
-      <div className="overflow-x-hidden absolute bottom-0 right-0 w-full h-full bg-gradient-to-bl from-violet-400 to-transparent opacity-10 rounded-full blur-3xl translate-x-1/4 translate-y-1/4 pointer-events-none group-hover:opacity-20 transition-opacity duration-300" /> */}
+    <Router>
+      <div className='overflow-x-hidden bg-black min-h-screen flex flex-col'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          
+          <Route path="/gpg" element={<GPG />} />
+        </Routes>
+        
+        <Footer />
+      </div>
+    </Router>
+  );
+};
 
-      <Navbar /> 
-      <section id="home"><HeroSection /></section>
-      {/* <section id="about"><AboutSection /></section> */}
-      <section id="projects"><ProjectsShowcase /></section>
-      <section id="contact"><Contact /></section>
-<Footer />
-
-    </div>
-  )
-}
-
-export default App
+export default App;
