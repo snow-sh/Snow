@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroSection from './HeroSection';
 import Contact from './Contact';
 import Navbar from './Navbar';
@@ -21,10 +21,8 @@ const App = () => {
       <div className='overflow-x-hidden bg-black min-h-screen flex flex-col'>
         <Routes>
           <Route path="/" element={<Home />} />
-          
           <Route path="/gpg" element={<GPG />} />
         </Routes>
-        
         <Footer />
       </div>
     </Router>
