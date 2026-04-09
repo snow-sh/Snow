@@ -10,6 +10,7 @@ import img4 from './assets/portfolio4.png';
 import img5 from './assets/portfolio5.png';
 import img6 from './assets/portfolio6.png';
 import img7 from './assets/portfolio66.gif';
+import img8 from './assets/portfolio8.png';
 
 
 
@@ -79,6 +80,13 @@ const ProjectCard = ({ project }) => {
 
 const ProjectsShowcase = () => {
     const projects = [
+            {
+      title: "Endless Car Racing Game",
+      description: "I created this with Unity 6",
+      imageUrl: img8,
+      liveUrl: "https://livhere.itch.io/game",
+      codeUrl: "https://github.com/snow-sh/car-racing",
+    },
           {
       title: "Portfolio website",
       description: "My Weird Portfolio created in react.",
